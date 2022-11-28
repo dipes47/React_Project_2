@@ -1,5 +1,6 @@
 import './ExpenseDate.css'; 
 
+//here in function we used date attribute, so we have to resue the similar name to ExpenseDate. 
 
 function ExpenseDate(props) {
   const month = props.date.toLocaleString('en-US', {month: 'long'});

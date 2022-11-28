@@ -1,6 +1,6 @@
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
-
+//here in function used attribute name should be similar to ExpenseItem.
 function Expenses(props) {
     return (<div className = "expenses">
       <ExpenseItem title = {props.items[0].title} amount = {props.items[0].amount} date = {props.items[0].date}></ExpenseItem>
@@ -12,3 +12,9 @@ function Expenses(props) {
 }
 
 export default Expenses;
+
+
+{/*     <App/> 
+  goalItem="Finish!" //App.js
+<CourseGoalItem text= {goalItem} />//App.js
+<li>{props.text}</li> // components  */}
