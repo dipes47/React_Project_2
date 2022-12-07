@@ -1,6 +1,6 @@
-import "./ExpenseItem.css";
 import ExpenseDate from './ExpenseDate';
-
+import Card from './Card.js';
+import './ExpenseItem.css';
 function ExpenseItem(props) {
   //const expenseDate = new Date(2021, 2, 28);
   //const expenseTitle = "Car Insurance";
@@ -8,7 +8,7 @@ function ExpenseItem(props) {
 
   
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       {/* <div>March 28th 2021</div> */}
       {/* <div>{expenseDate.toISOString()}</div> */}
       {/* <div>{props.date.toISOString()}</div> */}
@@ -26,7 +26,7 @@ function ExpenseItem(props) {
         {/* <div className="expense-item__price">${expenseAmount}</div> */}
         <div className="expense-item__price">${props.amount}</div>
       </div>
-    </div>
+    </Card>
   );
 }
 
